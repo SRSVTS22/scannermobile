@@ -1431,6 +1431,18 @@ var Html5Qrcode = function () {
                                     var a = d.clientWidth,
                                         c = d.clientHeight;
                                     m(a, c), n(), b()
+					 // 🔹 Adjust Zoom Dynamically
+                let track = a.getVideoTracks()[0];
+                let capabilities = track.getCapabilities();
+					console.log("capabilities: ",capabilities);
+                if (capabilities.zoom) {
+                    let zoomLevel = capabilities.zoom.max || 6;  // Default max zoom
+                    track.applyConstraints({
+                        advanced: [{ zoom: zoomLevel }]
+                    }).catch(err => console.warn("Zoom adjustment error:", err));
+                }
+            };
+            
                                 }, d.srcObject = a, d.play(), g._videoElement = d
                             }()
                     })
