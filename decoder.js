@@ -1444,7 +1444,7 @@ var Html5Qrcode = function () {
                                 exact: b
                             },
 				            focusMode:"continuous", // Enable continuous autofocus
-                            zoom: 2,
+                            zoom: 6,
                             aspectRatio:1.777777778
                         }
                     }).then(function (b) {
