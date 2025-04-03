@@ -1,0 +1,278 @@
+:root{
+    --primary: #273c88;
+}
+
+body{
+    scroll-behavior: smooth;
+    
+}
+#header_region {
+    display: none;
+}
+
+#reader__dashboard {
+    display: none !important;
+}
+.refreshmodal{
+background-color: var(--primary);
+color: #fff;
+}
+#genuineIconID,
+#fakeIconID{
+display: none;
+}
+
+.navigation .navbar{
+    background-color: transparent;
+}
+
+.navigation .navbar ul{
+    list-style-type: none;
+}
+
+
+.logo{
+    width: 116px !important;
+    max-height: 100px !important;
+    height: 42px !important;
+}
+.mr-4px{
+    margin-right: 4px;
+}
+.flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-center{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.flex-end{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.pd-l-r-0{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.ml-15{
+    margin-left: 15rem;
+}
+.pre-scroll {
+    max-height: 500px !important;
+    overflow-y: scroll !important;
+}
+
+.fixTableHead {
+    overflow-y: auto;
+    /* height: 110px; */
+  }
+.fixTableHead thead th {
+    position: sticky;
+    top: 0;
+}
+table {
+    border-collapse: collapse;        
+    width: 100%;
+}
+th,
+td {
+    padding: 8px 15px;
+    border: 2px solid #529432;
+}
+th {
+    /* background: #ABDD93; */
+    color: #fff !important;
+    background-color: #9d9d9d !important;
+    border-color: #9d9d9d !important;
+}
+
+.pdl0{
+    padding-left: 0px;
+}
+
+.security{
+    float: right;
+    font-size: 26px;
+    color: var(--primary) ;
+}
+
+.line{
+    border-top: 1px solid var(--primary);
+    box-shadow: 0 10px 20px rgba(39, 60, 136, 0.59), 0 6px 6px rgba(39, 60, 136, 0.63);
+}
+
+@media only screen and (max-width: 600px) {
+    .logo{
+        width: 150px;
+        max-height: 150px;
+    }
+    
+    .security{
+        float: right;
+        font-size: 18px;
+        color: var(--primary) ;
+    }
+    
+}
+
+.navigation{
+    padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 360px) {
+
+    .logo{
+        width: 220px;
+        max-height: 160px;
+    }
+    
+
+    .security{
+        float: right;
+        font-size: 14px;
+        color: var(--primary) ;
+    }
+
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.flex-center-hm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 7rem;
+}
+.flex-center-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.page-redirect{
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #9ea5af
+}
+.home-redirect{
+    color: #0d6efd !important;
+    text-decoration: underline !important;
+}
+.mr-05{
+    margin: 0.5rem 0;
+}
+.header-color{
+    color: var(--primary);
+}
+.icon-show{
+    margin-right: 6px;
+    font-size: 1.5rem;
+}
+.color-green{
+    color: green;
+}
+.color-red{
+    color: red;
+}
+
+#closemodal{
+    color: var(--primary);
+}
+
+.btn1{
+    color: var(--primary) !important;
+    border: #273c88 solid 2px !important;
+    border-radius: 10px !important;
+}
+
+
+
+
+/* *****|CHANGES FOR ROTATION|****** */
+
+
+@media (orientation: landscape) {
+    #reader {
+        display: none;
+    }
+    #textonweb{
+        display: none;
+    }
+}
+
+/* *****|CHANGES FOR LOADER|******* */
+
+
+#loader{
+   height: 20% !important;
+   width: 34% !important;
+   /* display: flex !important; */
+   align-items: center !important;
+   position: absolute !important;
+   top: 45% !important;
+   left: 36% !important;   
+}
+
+.spinner-border{
+    margin-left: 28% !important;
+}
+
+
+#loader > .modal-dialog > .modal-content > .modal-body{
+    padding: 1rem 1.5rem 1rem 1rem;
+}
