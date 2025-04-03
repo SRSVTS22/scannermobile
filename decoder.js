@@ -1460,7 +1460,7 @@ var Html5Qrcode = function () {
                             optional: [{
                                 sourceId: b
                             }],focusMode:"continuous", // Enable continuous autofocus
-                            zoom: 2,
+                            zoom: 6,
                             aspectRatio:1.777777778
                         }
                     }, function (b) {
